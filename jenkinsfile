@@ -8,14 +8,14 @@ pipeline {
             }
         }
         
-        stage('Build') {
-            steps {
-                // Install Node.js dependencies and build your project
-                // For example:
-                sh 'npm install'
-                sh 'npm run build'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         // Install Node.js dependencies and build your project
+        //         // For example:
+        //         sh 'npm install'
+        //         sh 'npm run build'
+        //     }
+        // }
         
         stage('SonarQube Scan') {
             steps {
